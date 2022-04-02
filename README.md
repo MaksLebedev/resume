@@ -2,4 +2,4 @@
 
 ## Результат вы увидите здесь
 
-[Моя первая раота](https://makslebedev.github.io/resume/?)
+[Моя первая работа](https://makslebedev.github.io/resume/?)
