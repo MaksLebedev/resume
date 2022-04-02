@@ -4,82 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="resume, cv, work, html, css, lebedev" >
-    <meta name="description" content="Это сайт - резюме Максима Лебедева" >
+    <meta name="keywords" content="resume, cv, work, html, css, lebedev">
+    <meta name="description" content="Это сайт - резюме Максима Лебедева">
+    <link rel="stylesheet" href="styles.css">
     <title>Resume Lebedev</title>
 </head>
 <body>
-    <img src="imgs/avatar.jpg" width="300" alt="Максим Лебедев">
 
-    <h1>Максим Лебедев</h1>
+    <div class="container">
 
-    <p>Я окончил Уральский Федеральный университет в 2016 году по специальности <em>строительство</em>. В данный момент работаю <strong>инженером по обследованию зданий и сооружений</strong>.</p>
-    
-    <p>Я люблю <em>читать, играть в шахматы, интересуюсь футболом</em>, а также <strong><em>хочу стать программистом</em></strong>.</p>
+        <div class="info">
+            <img src="imgs/avatar.jpg" alt="Максим Лебедев" class="avatar">
 
-    <h2><em>Мои социальные сети</em></h2>
+            <div class="info-text">
 
-    <a href="https://vk.com/m.a.lebedev" target="_blank">ВКонтакте</a>
+                <h1>Максим Лебедев</h1>
 
-    <h2><em>Мои увлечения</em></h2>
+                <p>Я окончил Уральский Федеральный университет в 2016 году по специальности <em>строительство</em>. В данный момент работаю <strong>инженером по обследованию зданий и сооружений</strong>.</p>
+                
+                <p>Я люблю <em>читать, играть в шахматы, интересуюсь футболом</em>, а также <strong><em>хочу стать программистом</em></strong>.</p>
 
-    <ul>
-        <li>Чтение;</li>
-        <li>Шахматы;</li>
-        <li>Футбол.</li>    
-    </ul>
+                <div class="social">
+                    <h2><em>Мои социальные сети</em></h2>
 
-    <h2><em>Опыт работы</em></h2>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Место</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ООО "Проекция"</td>
-                <td>Инженер по обследованию</td>
-                <td>2021 - н.в.</td>
-            </tr>
-            <tr>
-                <td>АО "УралКриоМаш"</td>
-                <td>Мастер РСУ</td>
-                <td>2018 - 2021</td>
-            </tr>
-            <tr>
-                <td>АО "Евраз НТМК"</td>
-                <td>Транспортировщик горячего металла</td>
-                <td>2018 - 2018</td>
-            </tr>
-        </tbody>
-    </table>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="vk" class="vkontakte">
 
-    <h2><em>Связаться со мной</em></h2>
+                    <a href="https://vk.com/m.a.lebedev" target="_blank">ВКонтакте</a>
+                </div>
+            </div>
+        </div>
 
-    <form>
+        <div class="card bg-1">
+            <h2><em>Мои увлечения</em></h2>
 
-    <div>
-        <label for="text">Имя</label>
-        <input type="text" id="text" placeholder="Введите имя">
+            <ul class="list">
+                <li>Чтение;</li>
+                <li>Шахматы;</li>
+                <li>Футбол.</li>    
+            </ul>
+        </div>
+
+        <div class="card bg-2">
+            <h2><em>Опыт работы</em></h2>
+            
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Место</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>ООО "Проекция"</td>
+                        <td>Инженер по обследованию</td>
+                        <td>2021 - н.в.</td>
+                    </tr>
+                    <tr>
+                        <td>АО "УралКриоМаш"</td>
+                        <td>Мастер РСУ</td>
+                        <td>2018 - 2021</td>
+                    </tr>
+                    <tr>
+                        <td>АО "Евраз НТМК"</td>
+                        <td>Транспортировщик горячего металла</td>
+                        <td>2018 - 2018</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+            <form class="form">
+            <h2><em>Связаться со мной</em></h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="text">Имя</label>
+                    <input type="text" id="text" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+
+        <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" cols="27" rows="5" placeholder="Введите сообщение"></textarea>
+        </div>
+
+        <div class="butt">
+            <button class="btn" type="submit">Отправить!</button>
+        </div>
+        </form>
     </div>
-
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-
-    <div>
-        <label for="message">Сообщение</label>
-        <br>
-        <textarea id="message" cols="27" rows="5" placeholder="Введите сообщение"></textarea>
-    </div>
-
-    <button type="submit">Отправить!</button>
-
-    </form>
 </body>
 </html>
